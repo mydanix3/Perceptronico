@@ -1,4 +1,4 @@
-<img src="readme_files/logo.png" align="right" width="300" alt="header pic"/>
+<img src="readme_files/logo.png" align="right" width="300" alt="header"/>
 
 **Autors**
 \
@@ -33,7 +33,7 @@ La OMS estima que hay 40 millones de personas ciegas en el mundo, mientras que l
 Atacando este proyecto des del punto de vista de la robótica, la idea es desarrollar un modelo 3D hardware, con todos los elementos software correspondientes, y listo para producción, diseñado para facilitar y resolver problemas que frecuentan a las personas que padecen de esta condición. 
 
 ## ¿Qué es? <a name="intro"></a>
-Es un robot con espacio de trabajo circular, capaz de mover la camera a la dirección del espacio donde la persona ciega tenga orientado el teléfono móvil para tomar una imagen, procesarla con un modelo de Visión por Computador ([YOLO v5](https://github.com/ultralytics/yolov5) y []()) y devolverle un audio indicándole los objetos encontrados y su distancia relativa al robot.
+Es un robot con espacio de trabajo circular, capaz de mover la camera a la dirección del espacio donde la persona ciega tenga orientado el teléfono móvil para tomar una imagen, procesarla con un modelo de Visión por Computador ([YOLO v5](https://github.com/ultralytics/yolov5) y [MannequinChallange](https://github.com/google/mannequinchallenge)) y devolverle un audio indicándole los objetos encontrados y su distancia relativa al robot.
 También consta de un _Line Tracker_ que para un futuro proyecto podría mejorarse transformándose en un vehículo semi autónomo.
 \
 Todas las conexiones entre robot y móvil del usuario se realizan sobre **http** de manera que la distancia en la que se encuentre el robot y el usuario es indiferente.
@@ -49,16 +49,16 @@ El proyecto también consta de la aplicación móvil, encargada de la adquisici�
 * [Fritzing](https://fritzing.org/)
 
 ## Componentes electronicos <a name="componentes"></a>
-<img src="readme_files/table.png"  align="center" width="500" alt="header pic"/>
-<img src="readme_files/table_2.png"  align="center" width="500" alt="header pic"/>
+<img src="readme_files/table.png"  align="center" width="500" alt="Tabla 1"/>
+<img src="readme_files/table_2.png"  align="center" width="500" alt="Tabla 2"/>
 
 ## Esquema Hardware <a name="hardware"></a>
 
-<img src="readme_files/hardware.png"  align="center" width="300" alt="header pic"/>
+<img src="readme_files/hardware.png"  align="center" width="300" alt="Hardware"/>
 
 ## Arquitecutra Software <a name="software"></a>
 
-<img src="readme_files/software.png"  align="center" width="500" alt="header pic"/>
+<img src="readme_files/software.png"  align="center" width="500" alt="Software"/>
 
 
 ---
@@ -96,7 +96,7 @@ El servidor, en el momento de recibir la imagen, la subirá al drive y será mom
 
 ## Estrategia de simulación  <a name="simulacion"></a>
 
-<img src="readme_files/escena.png" align="center" width="300" alt="base"/>
+<img src="readme_files/escena.png" align="center" width="300" alt="escena"/>
 
 En una primera instancia se decidió crear un mundo des de cero con [_openStreeMap_](https://www.openstreetmap.org) y usando el editor [_JOSM_](https://josm.openstreetmap.de/), pero después de crear las [_SUMO networks_](https://sumo.dlr.de/docs/Networks/SUMO_Road_Networks.html), los ficheros necesarios para la creación de tráfico y habiendo rectificado manualmente los errores en los ficheros .xml, vimos que seguían habiendo problemas en el número de creación de nodos y posiciones. Por consecuente se decidió utilizar mundos, con pequeñas modificaciones, propiedad de Webots.
 
@@ -106,6 +106,6 @@ Durante este recorrido, el robot recibirá los ángulos a los que rotará los mo
 
 Resultados: 
 
-<img src="readme_files/e1.png" align="right" width="300" alt="base"/>
-<img src="readme_files/e2.png" align="left" width="300" alt="base"/>
-<img src="readme_files/e3.png" align="center" width="300" alt="base"/>
+<img src="readme_files/e1.png" align="right" width="300" alt="escena1"/>
+<img src="readme_files/e2.png" align="left" width="300" alt="escena2"/>
+<img src="readme_files/e3.png" align="center" width="300" alt="escena3"/>
