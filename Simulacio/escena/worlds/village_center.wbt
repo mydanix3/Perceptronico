@@ -71,9 +71,8 @@ WorldInfo {
 }
 DEF VIEWPOINT Viewpoint {
   fieldOfView 1
-  orientation -0.15130294364572172 0.9788129364822337 0.13795888742363252 1.6868774129472421
-  position -130.25572049919344 5.853552129004429 163.42048562284498
-  near 4
+  orientation -0.09743078934848676 -0.9825644534862408 -0.158348779699169 1.8637874717536338
+  position -99.78337302930866 20.15121759760612 116.96572456773417
 }
 TexturedBackground {
 }
@@ -222,8 +221,8 @@ Solid {
   }
 }
 Robot {
-  translation -141.09 0.103051 165.464
-  rotation 0.9216681904747329 -0.2716010561298948 -0.2770570572574485 -1.656335307179586
+  translation -75.6425 -0.0157662 136.75
+  rotation -0.9878893280489576 -0.10573303511082766 -0.11355703770894855 1.58116
   scale 0.0116867 0.0116867 0.0116867
   children [
     DistanceSensor {
@@ -262,8 +261,8 @@ Robot {
             }
           ]
           endPoint DEF BRAZO Solid {
-            translation -3.552713678800501e-15 1.7763568394002505e-15 0
-            rotation 0 0 1 0
+            translation 19.24 -17.5802 0
+            rotation 0 0 1 3.141579
             children [
               HingeJoint {
                 jointParameters HingeJointParameters {
@@ -292,8 +291,8 @@ Robot {
                         translation -14 0 5.6843418860808015e-14
                         children [
                           Camera {
-                            translation -120.1 0 200
-                            rotation 0.45373801497199345 0.6339510209184822 0.6262810206653951 2.29945
+                            translation -120.99 13.2704 199.967
+                            rotation 0.55330690830737 0.5933449016723743 0.5846309031164363 2.007639693899575
                             width 512
                             height 512
                           }
@@ -390,7 +389,7 @@ Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position -0.1999946540397351
+        position -0.036196110054493524
         axis 0 0 1
         anchor 33 -8 0
       }
@@ -402,18 +401,18 @@ Robot {
         }
       ]
       endPoint DEF eix Solid {
-        translation 2.113539649830635 6.1087309701779375 0.042739092307872255
-        rotation -0.0003308818150630124 -5.947132191471165e-05 -0.9999999434901916 0.19084396524126482
+        translation 0.22628589185859482 0.8833206690552444 0.042739092307872095
+        rotation -0.002289271893212825 -0.0006083493587530509 -0.9999971945686931 0.02704548640181799
         children [
           HingeJoint {
             jointParameters HingeJointParameters {
-              position 86.64045933945049
+              position 132.18373606889799
               axis 0 1 0
               anchor 22.7 0 19.6
             }
             endPoint DEF RDD Solid {
-              translation 22.192884372296746 -35.91679999999921 19.5440271481955
-              rotation 0.0045740352841279475 -0.999972319138095 -0.0058684886298955505 1.32416180457154
+              translation 22.639051699018207 -35.916799999998794 20.10654173037118
+              rotation 0.004570737530300225 -0.9992513665572238 0.03841633496248115 6.046164902555398
               children [
                 DEF RDD Shape {
                   appearance Appearance {
@@ -432,13 +431,13 @@ Robot {
           }
           HingeJoint {
             jointParameters HingeJointParameters {
-              position 80.53907167730482
+              position 120.24912950268734
               axis 0 1 0
               anchor 22.7 0 19.6
             }
             endPoint DEF RDE Solid {
-              translation 22.191121726848618 35.91680000000226 19.636634998491452
-              rotation -0.004573998179126101 0.9999642074495657 0.007117749673827387 5.1408154331683384
+              translation 22.94996347986363 35.9168000000031 20.044766768918798
+              rotation 0.004573891655380723 -0.9999409193046106 0.009860903375196762 5.414531534675275
               children [
                 DEF RDE Shape {
                   appearance Appearance {
@@ -482,7 +481,7 @@ Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 107.7878935062711
+        position 150.73807723798222
         axis 0 1 0
         anchor -53.6 0 19.6
       }
@@ -494,8 +493,8 @@ Robot {
         }
       ]
       endPoint DEF RTE Solid {
-        translation -53.24369485069592 32.38857611542229 20.139681344592557
-        rotation 0.001626368611720764 0.9999985148212758 -0.0005703335702683458 0.8544030995009584
+        translation -53.8804677944278 32.388576115422126 20.18270672675939
+        rotation -0.007918456874279004 0.9999676247374446 -0.0014309149810334172 6.105468144641096
         children [
           DEF RTE Shape {
             geometry Cylinder {
@@ -512,7 +511,7 @@ Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 131.76852144972244
+        position 174.7182158675222
         axis 0 1 0
         anchor -53.6 0 19.6
       }
@@ -524,8 +523,8 @@ Robot {
         }
       ]
       endPoint DEF RTD Solid {
-        translation -53.948215308601156 -32.388599999999535 20.144963951886524
-        rotation 0.0047454585959202005 0.9999886701141097 0.0003745211995369019 5.985470180749234
+        translation -54.24641589539376 -32.38859999999895 19.58035056788965
+        rotation -0.0009472592524942523 -0.9999993457755392 -0.0006412085482292964 1.330315170814837
         children [
           DEF RTD Shape {
             geometry Cylinder {
@@ -617,8 +616,8 @@ DEF RECTA Solid {
   name "recta(4)"
 }
 DEF RECTA Solid {
-  translation -63.3022 0.161 141.594
-  rotation 0 -1 0 0.37
+  translation -63.2701 0.161 141.51
+  rotation 0 -1 0 0.365
   children [
     Shape {
       appearance PBRAppearance {
@@ -634,8 +633,8 @@ DEF RECTA Solid {
   name "recta(1)"
 }
 DEF RECTA Solid {
-  translation -35.5559 0.161 152.354
-  rotation 0 -1 0 0.37
+  translation -35.4738 0.161 152.14
+  rotation 0 -1 0 0.365
   children [
     Shape {
       appearance PBRAppearance {
@@ -651,7 +650,7 @@ DEF RECTA Solid {
   name "recta(5)"
 }
 DEF RECTA Solid {
-  translation -7.90321 0.161 163.079
+  translation -7.78388 0.171 162.771
   rotation 0 -1 0 0.37
   children [
     Shape {
@@ -666,6 +665,193 @@ DEF RECTA Solid {
     }
   ]
   name "recta(6)"
+}
+DEF RECTA Solid {
+  translation 14.5172 0.391 171.422
+  rotation 0 -1 0 0.37
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+        IBLStrength 0
+      }
+      geometry Plane {
+        size 30 0.2
+      }
+    }
+  ]
+  name "recta(7)"
+}
+DEF RECTA Solid {
+  translation 32.642 0.391 178.446
+  rotation 0 -1 0 0.37
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+        IBLStrength 0
+      }
+      geometry Plane {
+        size 30 0.2
+      }
+    }
+  ]
+  name "recta(8)"
+}
+DEF RECTA Solid {
+  translation 50.897 0.391 185.523
+  rotation 0 -1 0 0.37
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+        IBLStrength 0
+      }
+      geometry Plane {
+        size 30 0.2
+      }
+    }
+  ]
+  name "recta(9)"
+}
+DEF RECTA Solid {
+  translation 72.0888 0.391 193.743
+  rotation 0 -1 0 0.37
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+        IBLStrength 0
+      }
+      geometry Plane {
+        size 30 0.2
+      }
+    }
+  ]
+  name "recta(10)"
+}
+DEF RECTA Solid {
+  translation 98.9024 0.391 204.147
+  rotation 0 -1 0 0.37
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+        IBLStrength 0
+      }
+      geometry Plane {
+        size 30 0.2
+      }
+    }
+  ]
+  name "recta(11)"
+}
+DEF RECTA Solid {
+  translation 123.287 0.391 213.605
+  rotation 0 -1 0 0.37
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+        IBLStrength 0
+      }
+      geometry Plane {
+        size 30 0.2
+      }
+    }
+  ]
+  name "recta(12)"
+}
+DEF RECTA Solid {
+  translation 151.378 0.391 224.495
+  rotation 0 -1 0 0.37
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+        IBLStrength 0
+      }
+      geometry Plane {
+        size 30 0.2
+      }
+    }
+  ]
+  name "recta(13)"
+}
+DEF RECTA Solid {
+  translation 172.953 0.391 232.859
+  rotation 0 -1 0 0.37
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+        IBLStrength 0
+      }
+      geometry Plane {
+        size 30 0.2
+      }
+    }
+  ]
+  name "recta(14)"
+}
+DEF RECTA Solid {
+  translation 195.907 0.391 241.764
+  rotation 0 -1 0 0.37
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+        IBLStrength 0
+      }
+      geometry Plane {
+        size 30 0.2
+      }
+    }
+  ]
+  name "recta(15)"
+}
+DEF RECTA Solid {
+  translation 218.003 0.391 250.333
+  rotation 0 -1 0 0.37
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+        IBLStrength 0
+      }
+      geometry Plane {
+        size 30 0.2
+      }
+    }
+  ]
+  name "recta(16)"
+}
+DEF RECTA Solid {
+  translation 218.003 0.391 250.333
+  rotation 0 -1 0 0.37
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+        IBLStrength 0
+      }
+      geometry Plane {
+        size 30 0.2
+      }
+    }
+  ]
+  name "recta(17)"
 }
 DEF RECTA Solid {
   translation -80.4791 0.166 135.817
@@ -1289,13 +1475,6 @@ StreetLight {
   on FALSE
 }
 StreetLight {
-  translation -83.5426 -3.70284e-13 137.479
-  rotation 1.2246467991473552e-16 1 9.302113232677263e-16 6.02138584346124
-  name "street light(6)"
-  cutOffAngle 1.32
-  on FALSE
-}
-StreetLight {
   translation -243.91545070673868 -1.1368683772161603e-13 -312.5230278494126
   rotation -1.224646799147353e-16 -1 -4.570443915035939e-16 0.5235987931795869
   name "street light(1)"
@@ -1782,9 +1961,16 @@ Road {
   leftBorderBoundingObject TRUE
   castShadows TRUE
 }
-Pedestrian {
-  translation -140.824 1.46 166.29
-  rotation 0 1 0 2.0944
+DEF -- Pedestrian {
+  translation -77.3596 1.46 137.121
+  rotation 0 1 0 1.205
+  controllerArgs [
+    "speed=\"1.75\""
+    "--trajectory=-77.4 137,  -33.2 154"
+  ]
+  shirtColor 0 0 0
+  pantsColor 0 0 0
+  enableBoundingObject TRUE
 }
 Road {
   translation 253.475955 0.01 252.364774
@@ -2456,6 +2642,53 @@ PicketFenceWithDoor {
   translation -126.81136133673843 -3.552713578896301e-15 -74.50245926478524
   rotation 0 1 0 1.8584073176408265
 }
+GenericTrafficLight {
+  translation -73.1447 0 123.802
+  rotation 0 1 0 3.14159
+  state "green"
+}
+GenericTrafficLight {
+  translation -83.5125 0 112.718
+  rotation 0 1 0 2.87979
+  name "generic traffic light(1)"
+  state "green"
+}
+GenericTrafficLight {
+  translation -91.8533 0 114.745
+  rotation 0 -1 0 -0.261795307179586
+  name "generic traffic light(2)"
+  state "green"
+}
+Pedestrian {
+  translation -84.53 1.27 160.9
+  rotation 0 -1 0 2.0944
+  name "pedestrian(1)"
+}
+Pedestrian {
+  translation -72.4773 1.27 161.782
+  rotation 0 -1 0 0.261804
+  name "pedestrian(5)"
+}
+Pedestrian {
+  translation -86.1764 1.27 160.894
+  rotation 0 1 0 2.09439
+  name "pedestrian(2)"
+}
+Pedestrian {
+  translation -84.0808 1.27 166.857
+  rotation 0 -1 0 -0.523595307179586
+  name "pedestrian(3)"
+}
+Pedestrian {
+  translation -91.3319 1.27 153.877
+  rotation 0 1 0 3.14159
+  name "pedestrian(6)"
+}
+Pedestrian {
+  translation -73.9345 1.27 167.496
+  rotation 0 1 0 2.87979
+  name "pedestrian(4)"
+}
 PicketFenceWithDoor {
   translation -122.73229951467202 -3.552713578896301e-15 -60.71312807535621
   rotation 0 1 0 4.999999961640826
@@ -2751,8 +2984,8 @@ MetallicTrash {
   name "metallic trash(5)"
 }
 MetallicTrash {
-  translation -106.04129971954954 0.3055610612440273 3.4890002118076264
-  rotation 0.2289673592262337 -0.3674190527826305 0.9014306340818905 1.8558490880872822
+  translation -105.98711375144573 0.2095206023793053 3.5003968471870888
+  rotation 0.22327164783766448 -0.42130337061420514 0.8790069631015239 1.7223560126648059
   name "metallic trash(2)"
   enablePhysics TRUE
 }
@@ -3559,11 +3792,6 @@ UrbanFence {
   name "urban fence(4)"
 }
 UrbanFence {
-  translation -87.09873582971942 0.00999999999992184 134.1888688781169
-  rotation 0 -0.9999999999999999 0 3.248
-  name "urban fence(5)"
-}
-UrbanFence {
   translation -85.06033046992876 0.00999999999992184 134.40659253134902
   rotation 0 -0.9999999999999999 0 3.248
   name "urban fence(6)"
@@ -4148,7 +4376,7 @@ DEF PLAY_AREA Solid {
       rotation 0 1 0 0.5235987739999998
     }
     SoccerBall {
-      translation 5.079999999999984 0.19999901900000003 -4.5800000000000125
+      translation 5.079999999999984 0.19999803800000004 -4.5800000000000125
     }
   ]
   name "solid(0)"
@@ -4337,7 +4565,7 @@ DEF PLAY_AREA Solid {
       rotation 0 1 0 0.5235987739999998
     }
     SoccerBall {
-      translation 5.080000000000041 0.19999901900000003 -4.580000000000027
+      translation 5.080000000000041 0.19999803800000004 -4.580000000000041
     }
   ]
   name "play area"
@@ -4605,7 +4833,7 @@ DEF SUMO_VEHICLE2 TeslaModel3Simple {
   recognitionColors [
     0.18 0.5 0.72
   ]
-  name "4"
+  name "SUMO vehicle 2"
 }
 DEF SUMO_VEHICLE3 LincolnMKZSimple {
   translation -216.77178627464457 0.358 205.06040088449396
@@ -4614,7 +4842,7 @@ DEF SUMO_VEHICLE3 LincolnMKZSimple {
   recognitionColors [
     0.14 0.29 0.16
   ]
-  name "5"
+  name "SUMO vehicle 3"
 }
 DEF SUMO_VEHICLE4 LincolnMKZSimple {
   translation -313.5381615646493 0.358 258.9994291663898
@@ -4624,4 +4852,39 @@ DEF SUMO_VEHICLE4 LincolnMKZSimple {
     0.18 0.5 0.72
   ]
   name "SUMO vehicle 4"
+}
+LincolnMKZSimple {
+  translation -91.9647 0.358 109.503
+  rotation 0 -1 0 -0.4092653071795862
+  color 0.18 0.5 0.72
+  recognitionColors [
+    0.18 0.5 0.72
+  ]
+  name "6(1)"
+}
+DEF SUMO_VEHICLE0 BmwX5Simple {
+  translation -123.77802682553258 0.374 151.83653325588406
+  rotation 0 1 0 2.0908422512559675
+  color 0.85 0.85 0.05
+  recognitionColors [
+    0.85 0.85 0.05
+  ]
+  name "SUMO vehicle 0"
+}
+BmwX5Simple {
+  translation -89.4057 0.374 101.161
+  rotation 0 -1 0 2.88335
+  color 0.85 0.85 0.05
+  recognitionColors [
+    0.85 0.85 0.05
+  ]
+  name "4(1)"
+}
+DEF SUMO_VEHICLE1 ToyotaPriusSimple {
+  translation 10000 0.5 10
+  color 0.85 0.85 0.05
+  recognitionColors [
+    0.85 0.85 0.05
+  ]
+  name "SUMO vehicle 1"
 }
