@@ -33,7 +33,7 @@ La OMS estima que hay 40 millones de personas ciegas en el mundo, mientras que l
 Atacando este proyecto des del punto de vista de la robótica, la idea es desarrollar un modelo 3D hardware, con todos los elementos software correspondientes, y listo para producción, diseñado para facilitar y resolver problemas que frecuentan a las personas que padecen de esta condición. 
 
 ## ¿Qué es? <a name="intro"></a>
-Es un robot con espacio de trabajo circular, capaz de mover la camera a la dirección del espacio donde la persona ciega tenga orientado el teléfono móvil para tomar una imagen, procesarla con un modelo de Visión por Computador ([YOLO v5](https://github.com/ultralytics/yolov5) y [MannequinChallange](https://github.com/google/mannequinchallenge)) y devolverle un audio indicándole los objetos encontrados y su distancia relativa al robot.
+Es un robot con espacio de trabajo circular, capaz de mover la camera a la dirección del espacio donde la persona ciega tenga orientado el teléfono móvil para tomar una imagen, procesarla con un modelo de Visión por Computador ([YOLO v5](https://github.com/ultralytics/yolov5) y [MannequinChallange](https://github.com/google/mannequinchallenge)) y devolverle un audio indicándole los objetos encontrados y su posición relativa al robot.
 También consta de un _Line Tracker_ que para un futuro proyecto podría mejorarse transformándose en un vehículo semi autónomo.
 \
 Todas las conexiones entre robot y móvil del usuario se realizan sobre **http** de manera que la distancia en la que se encuentre el robot y el usuario es indiferente.
@@ -79,7 +79,25 @@ El cliente socket (robot) recibe constantemente un mensaje con valor 0 hasta el 
 El servidor, en el momento de recibir la imagen, la subirá al drive y será momento de aplicar el módulo de Visión por computador para el reconocimiento de objetos, que aplicará la misma lógica y subirá sus resultados a drive para que el usuario pueda acceder a ellos a partir de la aplicación.
 
 
+## Descripción de la escena  <a name="VC"></a>
 
+Hemos utilizado dos modelos por tal de:
+
+### Detectar los objetos de la escena.
+
+Primeramente, el modelo ([YOLO v5](https://github.com/ultralytics/yolov5)) lo hemos entrenado con uno de los datasets más prominentes de la actualidad, ([COCO dataset](https://cocodataset.org/)). Este dataset dispone de 91 clases de objetos cotidianos tales como personas, semáforos, tenedores, vasos, entre otros. Además, está compuesto por más de 120.000 imágenes, una cantidad lo suficientemente grande como para obtener unos resultados muy positivos. Gracias a esto podremos asegurar que la persona invidente será capaz de percibir un gran número de objetos y la mayoría muy útiles para su día a día.
+
+<img src="readme_files/COCO.JPG" align="center" width="300" alt="sencer"/>
+
+El detector nos indica en qué posición de la imagen se encuentran los objetos. Una vez sabemos esto podemos saber en qué posición de las coordenadas izquierda-derecha y arriba-abajo relativas a la cámara se encuentran dichos objetos. Así podemos describir estas dos dimensiones al usuario.
+
+### Calcular la profundidad de los objetos.
+
+Hemos utilizado el modelo ([MannequinChallange](https://github.com/google/mannequinchallenge)) para calcular la profundidad de cada imagen. Este modelo devuelve una imagen en blanco y negro en la cual, cuanto más oscuro es un píxel más lejano está de la cámara y viceversa cuanto más claro sea. 
+
+<img src="readme_files/desk.png" align="center" width="300" alt="sencer"/>
+
+De esta manera y gracias a que sabemos la posición de los objetos por el detector de objetos, podemos estimar la distancia media de la profundidad de cada objeto. Con esto ya podremos describir la coordenada lejos-cerca. Así podremos describir la dimensión restante al usuario.
 
 ## Piezas 3D  <a name="3d"></a>
 <img src="readme_files/3d1.png" align="center" width="300" alt="sencer"/>
@@ -89,6 +107,7 @@ El servidor, en el momento de recibir la imagen, la subirá al drive y será mom
 * Brazo de robot.
 * Estabilizador: Soporte de la cámara con dos funciones: rotar o mantener la dirección hacia el frente. 
 * Base con ruedas: Base similar a la de un vehículo, con 4 ruedas y espacios para 3 motores (dos para las ruedas traseras y uno para la dirección de las ruedas delanteras) 
+
 
 <img src="readme_files/3d2.png" align="center" width="300" alt="base"/>
 
