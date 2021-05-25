@@ -106,6 +106,6 @@ Durante este recorrido, el robot recibirá los ángulos a los que rotará los mo
 
 Resultados: 
 
-<img src="readme_files/e1.png" align="right" width="300" alt="base"/>
-<img src="readme_files/e2.png" align="left" width="300" alt="base"/>
-<img src="readme_files/e3.png" align="center" width="300" alt="base"/>
+<img src="readme_files/e1.png" align="right" width="150" alt="base"/>
+<img src="readme_files/e2.png" align="left" width="150" alt="base"/>
+<img src="readme_files/e3.png" align="center" width="150" alt="base"/>
