@@ -1,0 +1,11 @@
+Webots Proto Cache File version 1.5
+protoFileHash: 1a95cbde84e1f8704b7bff7b1dfada9a
+needsRobotAncestor: 0
+baseType: Solid
+slotType: 
+parameters: translation,rotation,primaryColor,secondaryColor,recognitionColors,driver,name,wheelBoundingObject,frontWheelAngularVelocity,rearWheelAngularVelocity
+tags: static
+license:  Copyright Cyberbotics Ltd. Licensed for use only with Webots.
+licenseUrl:  https://cyberbotics.com/webots_assets_license
+documentationUrl: https://www.cyberbotics.com/doc/automobile/car#twowheelersimple
+info: Simple\snon-controllable\smodel\sof\sa\sgeneric\sscooter\swithout\sphysics\sproperties\n
