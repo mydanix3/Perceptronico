@@ -96,7 +96,7 @@ El servidor, en el momento de recibir la imagen, la subirá al drive y será mom
 
 ## Estrategia de simulación  <a name="simulacion"></a>
 
-<img src="readme_files/escena.png" align="center" width="300" alt="base"/>
+<img src="readme_files/escena.png" align="middle" width="300" alt="base"/>
 
 En una primera instancia se decidió crear un mundo des de cero con [_openStreeMap_](https://www.openstreetmap.org) y usando el editor [_JOSM_](https://josm.openstreetmap.de/), pero después de crear las [_SUMO networks_](https://sumo.dlr.de/docs/Networks/SUMO_Road_Networks.html), los ficheros necesarios para la creación de tráfico y habiendo rectificado manualmente los errores en los ficheros .xml, vimos que seguían habiendo problemas en el número de creación de nodos y posiciones. Por consecuente se decidió utilizar mundos, con pequeñas modificaciones, propiedad de Webots.
 
@@ -108,4 +108,4 @@ Resultados:
 
 <img src="readme_files/e1.png" align="right" width="150" alt="base"/>
 <img src="readme_files/e2.png" align="left" width="150" alt="base"/>
-<img src="readme_files/e3.png" align="center" width="150" alt="base"/>
+<img src="readme_files/e3.png" align="middle" width="150" alt="base"/>
