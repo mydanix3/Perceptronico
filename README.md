@@ -96,11 +96,7 @@ El servidor, en el momento de recibir la imagen, la subirá al drive y será mom
 
 ## Estrategia de simulación  <a name="simulacion"></a>
 
-<<<<<<< HEAD
 <img src="readme_files/escena.png" align="center" width="300" alt="escena"/>
-=======
-<img src="readme_files/escena.png" align="middle" width="300" alt="base"/>
->>>>>>> 50f7d0d138a4a793f798a268476e46709c2ae23d
 
 En una primera instancia se decidió crear un mundo des de cero con [_openStreeMap_](https://www.openstreetmap.org) y usando el editor [_JOSM_](https://josm.openstreetmap.de/), pero después de crear las [_SUMO networks_](https://sumo.dlr.de/docs/Networks/SUMO_Road_Networks.html), los ficheros necesarios para la creación de tráfico y habiendo rectificado manualmente los errores en los ficheros .xml, vimos que seguían habiendo problemas en el número de creación de nodos y posiciones. Por consecuente se decidió utilizar mundos, con pequeñas modificaciones, propiedad de Webots.
 
@@ -110,12 +106,6 @@ Durante este recorrido, el robot recibirá los ángulos a los que rotará los mo
 
 Resultados: 
 
-<<<<<<< HEAD
 <img src="readme_files/e1.png" align="right" width="300" alt="escena1"/>
 <img src="readme_files/e2.png" align="left" width="300" alt="escena2"/>
-<img src="readme_files/e3.png" align="center" width="300" alt="escena3"/>
-=======
-<img src="readme_files/e1.png" align="right" width="150" alt="base"/>
-<img src="readme_files/e2.png" align="left" width="150" alt="base"/>
-<img src="readme_files/e3.png" align="middle" width="150" alt="base"/>
->>>>>>> 50f7d0d138a4a793f798a268476e46709c2ae23d
+<img src="readme_files/e3.png" align="middle" width="150" alt="escena3"/>
