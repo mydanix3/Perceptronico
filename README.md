@@ -87,7 +87,7 @@ Hemos utilizado dos modelos por tal de:
 
 Primeramente, el modelo ([YOLO v5](https://github.com/ultralytics/yolov5)) lo hemos entrenado con uno de los datasets más prominentes de la actualidad, ([COCO dataset](https://cocodataset.org/)). Este dataset dispone de 91 clases de objetos cotidianos tales como personas, semáforos, tenedores, vasos, entre otros. Además, está compuesto por más de 120.000 imágenes, una cantidad lo suficientemente grande como para obtener unos resultados muy positivos. Gracias a esto podremos asegurar que la persona invidente será capaz de percibir un gran número de objetos y la mayoría muy útiles para su día a día.
 
-<img src="readme_files/COCO.JPG" align="center" width="300" alt="sencer"/>
+<img src="readme_files/COCO.jpg" align="center" width="300" alt="sencer"/>
 
 El detector nos indica en qué posición de la imagen se encuentran los objetos. Una vez sabemos esto podemos saber en qué posición de las coordenadas izquierda-derecha y arriba-abajo relativas a la cámara se encuentran dichos objetos. Así podemos describir estas dos dimensiones al usuario.
 
