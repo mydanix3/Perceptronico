@@ -16,6 +16,7 @@ _**Universitat Autònoma de Barcelona**_
 # Perceptronico
 _"A vision substitution for blind people"_
 
+Github del modelo de Visión por Computador: https://github.com/mydanix3/perceptronico
 
 ## Table of contents
 1. [Motivación](#motivació)
