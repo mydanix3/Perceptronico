@@ -11,12 +11,13 @@ _David Durán Barberán - 1531664_
 _Daniel Alonso Pérez - 1531551_ 
 
 _**Projecte RLP**_ \
+
+Github del modelo de Visión por Computador: https://github.com/mydanix3/perceptronico
+
 _**Universitat Autònoma de Barcelona**_
 
 # Perceptronico
 _"A vision substitution for blind people"_
-
-Github del modelo de Visión por Computador: https://github.com/mydanix3/perceptronico
 
 ## Table of contents
 1. [Motivación](#motivació)
