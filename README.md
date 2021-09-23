@@ -99,6 +99,8 @@ Hemos utilizado el modelo ([MannequinChallange](https://github.com/google/manneq
 
 De esta manera y gracias a que sabemos la posición de los objetos por el detector de objetos, podemos estimar la distancia media de la profundidad de cada objeto. Con esto ya podremos describir la coordenada lejos-cerca. Así podremos describir la dimensión restante al usuario.
 
+Para más información visitar el github oficial del modelo: https://github.com/mydanix3/perceptronico
+
 ## Piezas 3D  <a name="3d"></a>
 <img src="readme_files/3d1.png" align="center" width="300" alt="sencer"/>
 
